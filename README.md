@@ -58,7 +58,7 @@ Any additional attributes you want to modify or add to the icons `<svg>` element
 ### Adding color
 
 I'm sure you won't want to stick with with using gray/black as the icons default color.
-By default this gem adds `stroke='currentColor'` the the icons SVg, this allows you set set `color` in CSS to apply a color to the icons primary stroke.
+You'll want to add `stroke='currentColor'` to the icons SVG, this allows you to set `color` in CSS to apply a color to the icons primary stroke.
 
 The easiest two methods to add color to the icon can be done with the following methods:
 
@@ -66,7 +66,7 @@ The easiest two methods to add color to the icon can be done with the following 
 
 Add inline CSS to the icon
 
-`<%= healthicon('body/dna', style: 'color: red') %>`
+`<%= healthicon('body/dna', stroke: 'currentColor', style: 'color: red') %>`
 
 
 **Second Method:**
@@ -77,7 +77,7 @@ Create a class in your stylesheets and add the class to the icon.
 .red { color: red; }
 ```
 
-`<%= healthicon('body/dna', class: 'red' ) %>`
+`<%= healthicon('body/dna', stroke: 'currentColor', class: 'red' ) %>`
 
 ## Development
 

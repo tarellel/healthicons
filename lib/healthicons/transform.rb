@@ -4,7 +4,7 @@ require 'nokogiri'
 
 module Healthicons
   class Transform
-    DEFAULT_OPTIONS = { 'aria-hidden' => true, stroke: 'currentColor', focusable: false, role: 'img', size: 24 }.freeze
+    DEFAULT_OPTIONS = { 'aria-hidden' => true, focusable: false, role: 'img', size: 24 }.freeze
     HEIGHT_AND_WIDTH = %i[height width].freeze
     KEYS_TO_REMOVE = %i[height width viewbox xmlns].freeze
 
