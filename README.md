@@ -94,7 +94,7 @@ The gem is available as open source under the terms of the [MIT License](https:/
 The icons associated from the original package in this gem are licenses under the [CC0 License](https://healthicons.org/about#license)
 
 [license-shield]: https://img.shields.io/github/license/tarellel/healthicons.svg?style=flat-square
-[license-url]: https://github.com/tarellel/healthicons/blob/main/LICENSE
+[license-url]: https://github.com/tarellel/healthicons/blob/main/LICENSE.txt
 [rubygems-downloads]: https://ruby-gem-downloads-badge.herokuapp.com/healthicons?type=total
 [rubygems-link]: https://rubygems.org/gems/healthicons
 [rubygems-version]: https://badge.fury.io/rb/healthicons.svg
