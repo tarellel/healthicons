@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    healthicons (0.0.2)
+    healthicons (0.0.3)
       nokogiri (>= 1.6)
       rails (>= 4, <= 7.0)
 
