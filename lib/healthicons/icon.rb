@@ -19,7 +19,7 @@ module Healthicons
     # @param icon [String] The icon image name
     # @param options [Hash](optional)
     def initialize(icon, options = {})
-      @variant = variant_check(options[:varient])
+      @variant = variant_check(options[:variant])
       @name = icon.to_s
       @options = options
     end
