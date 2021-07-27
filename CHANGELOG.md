@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.5] - 2021-07-27
+
+- CHANGED: Updated icons to include healthicons latest SVG changes and newly added icons
+- CHANGED: Version bump since so many of the icon files changed
+
 ## [0.0.4] - 2021-07-9
 
 - CHANGED: Removing adding varient attribute to SVG/XML when a variant is specified
