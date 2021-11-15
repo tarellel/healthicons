@@ -33,7 +33,8 @@ module Healthicons
       return '' if @svg.blank?
 
       add_icon_options
-      @svg&.to_xml
+      # used to ensure icons with missing </path> have it added to ensure IE compatibiltiy
+      @svg&.to_html(&:no_empty_tags)
     end
 
     private
@@ -106,7 +107,7 @@ module Healthicons
     #   https://nokogiri.org/rdoc/Nokogiri/XML/Builder.html
     #   https://www.rubydoc.info/github/sparklemotion/nokogiri/Nokogiri/XML/Node
     def parse_icon_content(icon_contents)
-      Nokogiri::HTML::DocumentFragment.parse(icon_contents)
+      Nokogiri::HTML::DocumentFragment.parse(icon_contents) # allow it's child attributes/tags to be accessible
     rescue
       ''
     end
