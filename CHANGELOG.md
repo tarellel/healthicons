@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Include `activesupport/blank`  require for some instances where `blank?` may be unavailable
 - Resolve issue were tests are failing for some version of nokogiri
 - Version bump
+- Added Github Actions with linters and tests
 
 ## [0.0.6] - 2021-11-15
 
