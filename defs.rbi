@@ -2,7 +2,7 @@
 module Healthicons
   SOLID_ICON_PATH = T.let(File.join(File.dirname(__FILE__), 'healthicons', 'icons', 'solid'), T.untyped)
   OUTLINE_ICON_PATH = T.let(File.join(File.dirname(__FILE__), 'healthicons', 'icons', 'outline'), T.untyped)
-  VERSION = T.let('0.0.7', T.untyped)
+  VERSION = T.let('0.0.8', T.untyped)
 
   class Error < StandardError
   end
