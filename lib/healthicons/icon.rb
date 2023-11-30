@@ -56,7 +56,7 @@ module Healthicons
                             ''
                           else
                             # Removes filenames that start with `.svg`, `./`svg, '../svg', or '/svg'
-                            "#{@name&.gsub(%r{^[.\/]+/?}, '')}.svg"
+                            "#{@name&.gsub(%r{^[./]+/?}, '')}.svg"
                           end
     end
 

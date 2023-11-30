@@ -2,7 +2,7 @@
 module Healthicons
   SOLID_ICON_PATH = T.let(File.join(File.dirname(__FILE__), 'healthicons', 'icons', 'solid'), T.untyped)
   OUTLINE_ICON_PATH = T.let(File.join(File.dirname(__FILE__), 'healthicons', 'icons', 'outline'), T.untyped)
-  VERSION = T.let('0.0.1', T.untyped)
+  VERSION = T.let('0.0.7', T.untyped)
 
   class Error < StandardError
   end
@@ -79,8 +79,8 @@ module Healthicons
       # Create an error for an unknwon icon
       # 
       # _@param_ `icon`
-      sig { params(icon: String).returns(String) }
-      def initilize(icon = ''); end
+      sig { params(icon: String).void }
+      def initialize(icon = ''); end
     end
 
     # Used to generate an exception if an unknown varient was supplied
@@ -91,7 +91,7 @@ module Healthicons
   class Transform
     DEFAULT_OPTIONS = T.let({ 'aria-hidden' => true, stroke: 'currentColor', focusable: false, role: 'img', size: 24 }.freeze, T.untyped)
     HEIGHT_AND_WIDTH = T.let(%i[height width].freeze, T.untyped)
-    KEYS_TO_REMOVE = T.let(%i[height width viewbox xmlns].freeze, T.untyped)
+    KEYS_TO_REMOVE = T.let(%i[height width variant viewbox xmlns].freeze, T.untyped)
 
     # _@param_ `svg`
     # 

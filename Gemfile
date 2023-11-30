@@ -21,7 +21,7 @@ group :development do
   gem 'rubocop', '>= 0.89', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rspec'
-  gem 'sord'  
+  gem 'sord'
 end
 
 group :test do
