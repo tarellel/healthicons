@@ -7,6 +7,7 @@ require_relative 'healthicons/icon'
 require_relative 'healthicons/transform'       # Used for adding, modifying, and/or modifying attributes to the SVG icon
 require_relative 'healthicons/rails/railtie'   # Used to initialize and lazyload the applications views
 require_relative 'healthicons/rails/view_helpers'
+require 'active_support/core_ext/object/blank'
 
 module Healthicons
   class Error < StandardError; end

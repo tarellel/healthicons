@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
 require 'nokogiri'
+require 'active_support/core_ext/object/blank'
 
 module Healthicons
   class Transform
-    DEFAULT_OPTIONS = { 'aria-hidden' => true, focusable: false, role: 'img', size: 24 }.freeze
+    DEFAULT_OPTIONS = { 'aria-hidden' => true, stroke: 'currentColor', focusable: false, role: 'img', size: 24 }.freeze
     HEIGHT_AND_WIDTH = %i[height width].freeze
     KEYS_TO_REMOVE = %i[height width variant viewbox xmlns].freeze
 
@@ -76,7 +77,8 @@ module Healthicons
       return if @options.blank? || !options.is_a?(Hash)
 
       set_size_and_width
-      @options.reject { |k| k == :size }.each do |key, val|
+      @options = @options.reject { |k| k == :size }
+      @options.each do |key, val|
         set_icon_attribute(key, val)
       end
     end
