@@ -23,8 +23,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '>= 1.16'
-  spec.add_development_dependency 'rspec', '>= 3.0', '< 5.0'
-  spec.add_development_dependency 'rubocop', '~> 1.18.1'
-  spec.add_dependency 'rails', '>= 4', '<= 7.0'
+  spec.add_development_dependency 'rspec', '>= 3.0'
+  spec.add_development_dependency 'rubocop', '>= 1.7'
+  spec.add_dependency 'rails', '>= 4'
   spec.add_dependency 'nokogiri', '>= 1.6'      # Required for parsing and modifying the SVG icons
 end
