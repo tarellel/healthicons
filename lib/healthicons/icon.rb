@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'active_support/core_ext/object/blank'
+
 module Healthicons
   class Icon
     VARIANTS = %i[outline solid].freeze
@@ -74,7 +76,7 @@ module Healthicons
     # @return [String] SVG/XML file contents
     def svg_file_contents
       @_svg_file_contents ||= if File.exist?(file_path)
-                                File.open(file_path).read.force_encoding('UTF-8')
+                                File.read(file_path).force_encoding('UTF-8')
                               else
                                 raise Healthicons::Errors::UnknownIcon, "Icon '#{@name}' could not be found."
                               end

@@ -7,7 +7,7 @@ module Healthicons
       #
       # @param icon [String]
       # @return [String]
-      def initilize(icon = '')
+      def initialize(icon = '')
         msg = "The #{icon} icon could not be found."
         super(msg)
       end
